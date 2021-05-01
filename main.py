@@ -1,15 +1,16 @@
-from bot_factory import BotFactory
+from bots.bot import Bot, BotSettingsProvider
 from inputs.terminal_bot import TerminalBot
 from training.coach import Coach
 from training.smart_coach import SmartCoach
 
 
 def main() -> None:
-    bot = BotFactory().create()
-
     coach = SmartCoach(
         Coach()
     )
+    provider = BotSettingsProvider()
+    settings = provider.provide()
+    bot = Bot(settings)
     coach.train(bot)
 
     TerminalBot(bot).execute()
