@@ -1,6 +1,6 @@
 from chatterbot import ChatBot
 
-from training.coach import Coach
+from src.training.coach import Coach
 
 
 class SmartCoach(Coach):

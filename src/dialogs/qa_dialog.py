@@ -1,5 +1,5 @@
-from dialogs.dialog import Dialog, DEFAULT_MAXIMUM_SIMILARITY_THRESHOLD
-from dialogs.enums import LogicAdapters
+from src.dialogs.dialog import Dialog, DEFAULT_MAXIMUM_SIMILARITY_THRESHOLD
+from src.dialogs.enums import LogicAdapters
 
 
 class QADialog(Dialog):

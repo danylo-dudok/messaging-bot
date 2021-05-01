@@ -3,8 +3,8 @@ from dataclasses import dataclass
 from chatterbot import ChatBot, response_selection
 from chatterbot.response_selection import get_most_frequent_response
 
-from dialogs.dialog import Dialog
-from dialogs.enums import StorageAdapters, LogicAdapters
+from src.dialogs.dialog import Dialog
+from src.dialogs.enums import StorageAdapters, LogicAdapters
 
 
 @dataclass

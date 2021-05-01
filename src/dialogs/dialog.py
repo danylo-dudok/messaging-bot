@@ -1,6 +1,6 @@
 from typing import final
 
-from dialogs.enums import LogicAdapters, StatementComparison
+from src.dialogs.enums import LogicAdapters, StatementComparison
 
 DEFAULT_RESPONSE: final = 'I am sorry, but I do not understand.'
 DEFAULT_MAXIMUM_SIMILARITY_THRESHOLD: final = 0.90
